@@ -1,4 +1,4 @@
-package SergePlugins::Sync::TranslationService::mojito;
+package Serge::Sync::Plugin::TranslationService::mojito;
 use parent Serge::Sync::Plugin::Base::TranslationService, Serge::Interface::SysCmdRunner;
 
 use strict;

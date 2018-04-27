@@ -26,7 +26,7 @@ my $builder = Module::Build->new(
         'IO::String'         => 0,
         'Text::CSV_XS'       => 0,
     },
-    add_to_cleanup           => ['SergePlugins-*', 'Makefile.PL', 'MYMETA.*', 'META.*', 'MANIFEST.bak', 'MANIFEST'],
+    add_to_cleanup           => ['Serge-*', 'Makefile.PL', 'MYMETA.*', 'META.*', 'MANIFEST.bak', 'MANIFEST'],
     create_makefile_pl       => 'traditional',
 );
 

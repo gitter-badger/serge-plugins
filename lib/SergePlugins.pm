@@ -16,7 +16,7 @@ L<https://serge.io/>
 
 =cut
 
-package SergePlugins;
+package Serge::Sync;
 
 our $VERSION = '0.1';
 
