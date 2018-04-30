@@ -4,10 +4,10 @@ use warnings FATAL => 'all';
 use Module::Build;
 
 my $builder = Module::Build->new(
-    module_name              => 'SergePlugins',
+    module_name              => 'Serge::Sync::Plugin::TranslationService::mojito',
     license                  => 'perl',
     dist_author              => 'Dragos Varovici <dvarovici.work@gmail.com>',
-    dist_version_from        => 'lib/SergePlugins.pm',
+    dist_version_from        => 'lib/SergePlugins/Sync/Plugin/TranslationService/mojito.pm',
     release_status           => 'stable',
     configure_requires       => {
         'Module::Build'      => 0,
@@ -20,13 +20,9 @@ my $builder = Module::Build->new(
         'Text::Diff'         => 0,
     },
     requires => {
-        'Serge'              => 0
+        'Serge'              => '1.3.2'
     },
-    recommends => {
-        'IO::String'         => 0,
-        'Text::CSV_XS'       => 0,
-    },
-    add_to_cleanup           => ['Serge-*', 'Makefile.PL', 'MYMETA.*', 'META.*', 'MANIFEST.bak', 'MANIFEST'],
+    add_to_cleanup           => ['mojito-*', 'Makefile.PL', 'MYMETA.*', 'META.*', 'MANIFEST.bak', 'MANIFEST'],
     create_makefile_pl       => 'traditional',
 );
 

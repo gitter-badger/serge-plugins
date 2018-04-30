@@ -1,4 +1,25 @@
+=head1 NAME
+
+Mojito plugin for Serge
+
+=head1 DESCRIPTION
+
+Serge Mojito translation server (http://www.mojito.global/) synchronization plugin
+
+=head1 COPYRIGHT
+
+Copyright (C) 2018, Dragos Varovici.
+
+=head1 SEE ALSO
+
+L<https://serge.io/>
+
+=cut
+
 package Serge::Sync::Plugin::TranslationService::mojito;
+
+our $VERSION = '1.0';
+
 use parent Serge::Sync::Plugin::Base::TranslationService, Serge::Interface::SysCmdRunner;
 
 use strict;
