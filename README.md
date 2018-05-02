@@ -1,2 +1,2 @@
 # serge-plugins
-Serge.io plugins (mainly translation services)
+Serge.io translation services plugins
