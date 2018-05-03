@@ -1,24 +1,8 @@
-=head1 NAME
-
-Mojito plugin for Serge
-
-=head1 DESCRIPTION
-
-Serge Mojito translation server (http://www.mojito.global/) synchronization plugin
-
-=head1 COPYRIGHT
-
-Copyright (C) 2018, Dragos Varovici.
-
-=head1 SEE ALSO
-
-L<https://serge.io/>
-
-=cut
+# ABSTRACT: Serge Zanata translation server (http://zanata.org/) synchronization plugin
 
 package Serge::Sync::Plugin::TranslationService::zanata;
 
-our $VERSION = '1.0';
+our $VERSION = '0.9';
 
 use parent Serge::Sync::Plugin::Base::TranslationService, Serge::Interface::SysCmdRunner;
 
@@ -89,7 +73,7 @@ sub run_zanata_cli {
     }
 
     $command = 'zanata-cli '.$command;
-    
+
     print "Running '$command'...\n";
     return $self->run_cmd($command, $capture);
 }
